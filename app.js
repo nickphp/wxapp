@@ -28,7 +28,7 @@ app.use(function(req, res, next) {
     res.send("404 Not Find");//////
 //  var err = new Error('Not Found');
 //  err.status = 404;
-//  next(err);////ss//
+//  next(err);
 
 });//
 
@@ -43,4 +43,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;//
+module.exports = app;

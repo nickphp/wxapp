@@ -25,7 +25,7 @@ app.use(function(req, res, next) {
     res.send("404 Not Find");
 //  var err = new Error('Not Found');///111
 //  err.status = 404;////
-//  next(err);
+//  next(err);//p
 });///nicekkdd
 
 

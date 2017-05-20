@@ -17,4 +17,3 @@ Promise.map(userIds,(id) => {
 }).catch((err) =>{
   console.log('!!!',err);
 });
-

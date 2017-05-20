@@ -1,6 +1,6 @@
 const Promise = require("bluebird");
 const rangeArray = (start, end) => Array(end - start + 1).fill(0).map((v, i) => i + start)
-const userIds = rangeArray(1,5) 
+const userIds = rangeArray(1,5)
 Promise.map(userIds,(id) => {
   return "user"+id;
 }).then((users) => {
@@ -15,5 +15,5 @@ Promise.map(userIds,(id) => {
 }).then((result) => {
     console.log(">>>",result);
 }).catch((err) =>{
-  console.log('!!!',err);
+  console.log('!!!',err);///
 });

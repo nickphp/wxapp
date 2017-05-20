@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+app.use('/users', users);//继续测试面板
 app.use('/test', require('./routes/test'));
 
 // catch 404 and forward to error handler

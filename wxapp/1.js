@@ -9,7 +9,7 @@ Promise.map(userIds,(id) => {
       return Promise.map(recordIds,(rid) => {
         return user + "的record" + rid + new Date().getMilliseconds();
       },{concurrency:5}).then((records) => {
-          return {username : user,records:records}
+          return {username : user,records:records}//
       });
     });·
 }).then((result) => {

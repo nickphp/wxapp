@@ -11,7 +11,7 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'jade');//
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -30,10 +30,9 @@ app.use(function(req, res, next) {
     res.send("404 Not Find");
 //  var err = new Error('Not Found');
 //  err.status = 404;
-//  next(err);//
+//  next(err);
 
 });
-
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development

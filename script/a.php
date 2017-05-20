@@ -4,6 +4,7 @@ class Hello {
     public function __construct() {
         echo "hello __construct";
         $this->run();
+        
     }
 
     public function run() {

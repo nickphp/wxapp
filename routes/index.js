@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'nodejs Express 框架测试' });
+  res.render('index', { title: 'Express 框架测试' });
 });
 
 module.exports = router;

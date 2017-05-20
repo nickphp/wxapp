@@ -1,6 +1,6 @@
 const Promise = require("bluebird");
 const rangeArray = (start, end) => Array(end - start + 1).fill(0).map((v, i) => i + start)
-const userIds = rangeArray(1,5)
+const userIds = rangeArray(1,5) // return [0,1,2,3,4,5,6,7,8,9,10]
 Promise.map(userIds,(id) => {
   return "user"+id;
 }).then((users) => {
@@ -9,11 +9,11 @@ Promise.map(userIds,(id) => {
       return Promise.map(recordIds,(rid) => {
         return user + "的record" + rid + new Date().getMilliseconds();
       },{concurrency:5}).then((records) => {
-          return {username : user,records:records}//
+          return {username : user,records:records}
       });
     });·
 }).then((result) => {
     console.log(">>>",result);
 }).catch((err) =>{
-  console.log('!!!',err);//这是测试调教
-});
+  console.log('!!!',err);
+});//

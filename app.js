@@ -27,7 +27,6 @@ app.use(function(req, res, next) {
 //  next(err);//123499494949//
 });///nicekkdd..//
 
-
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development

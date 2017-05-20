@@ -24,7 +24,7 @@ app.use(function(req, res, next) {
     res.send("404 Not Find");
 //  var err = new Error('Not Found');///111
 //  err.status = 404;////
-//  next(err);
+//  next(err);//123499494949//
 });///nicekkdd
 
 
@@ -35,7 +35,7 @@ app.use(function(err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page
-  res.status(err.status || 500);
+  res.status(err.status || 500);//
   res.render('error');
 });
 
